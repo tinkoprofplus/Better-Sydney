@@ -1,3 +1,10 @@
+/*
+*
+* Orbit by Meteor Development
+* https://github.com/MeteorDevelopment/orbit/blob/master/LICENSE
+*
+ */
+
 package me.aidan.sydney.events;
 
 import java.lang.annotation.ElementType;
