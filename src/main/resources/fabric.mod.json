@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "better-sydney",
 	"version": "${version}",
-	"name": "Better Sydney",
+	"name": "Better-Sydney",
 	"description": "Sydney-Client but better.",
 	"authors": [
 		"Tinkoprof (better sydney author)",

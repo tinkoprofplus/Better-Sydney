@@ -6,7 +6,7 @@
 
 ## PHASE
 
-*Developing... (%0 completed)*
+*Developing... (7.14% completed)*
 
 ## FEATURES:
 
@@ -23,7 +23,8 @@
 - *Added new capes (not completed...)*
 - *More better combat utility (not completed...)*
 - *Optimized some mixins (not completed...)*
-- *Fixed some HUD bugs*
+- *Fixed some HUD bugs (completed!)
+- *Added ChatSuffix (not completed)*
 
 ## CREDITS
 

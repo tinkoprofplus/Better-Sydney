@@ -43,7 +43,7 @@ import java.util.List;
 public class HUDModule extends Module {
     public CategorySetting watermarkCategory = new CategorySetting("Watermark", "The settings for the client's watermark.");
     public BooleanSetting watermark = new BooleanSetting("Watermark", "Enabled", "Renders the client's name and version at the top left.", new CategorySetting.Visibility(watermarkCategory), true);
-    public StringSetting watermarkText = new StringSetting("WatermarkText", "Text", "The client name that will be rendered.", new CategorySetting.Visibility(watermarkCategory), Sydney.MOD_NAME);
+    public StringSetting watermarkText = new StringSetting("WatermarkText", "Text", "The client name that will be rendered.", new CategorySetting.Visibility(watermarkCategory), "Better-Sydney");
     public BooleanSetting watermarkVersion = new BooleanSetting("WatermarkVersion", "Version", "Renders the client's version after the name.", new CategorySetting.Visibility(watermarkCategory), true);
     public BooleanSetting watermarkMinecraftVersion = new BooleanSetting("WatermarkMinecraftVersion", "MinecraftVersion", "Renders the client's minecraft version after the version.", new CategorySetting.Visibility(watermarkCategory), false);
     public BooleanSetting watermarkRevision = new BooleanSetting("WatermarkRevision", "Revision", "Renders the client's git revision next to the version.", new BooleanSetting.Visibility(watermarkVersion, true), true);
