@@ -217,6 +217,7 @@ public class HUDModule extends Module {
         if (watermark.getValue()) {
             String text = watermarkText.getValue() + (watermarkVersion.getValue() ? (watermarkSync.getValue() ? "" : inversion.getValue() ? Formatting.GRAY : Formatting.WHITE) + " " + Sydney.MOD_VERSION + (watermarkMinecraftVersion.getValue() ? "-mc" + Sydney.MINECRAFT_VERSION : "") + (watermarkRevision.getValue() ? "+" + Sydney.GIT_REVISION + "." + Sydney.GIT_HASH : "") : "");
             drawText(event.getContext(), text, 2, 0);
+            System.out.println("Watermark y: 0");
         }
 
         if(uptime.getValue()) {
@@ -226,7 +227,8 @@ public class HUDModule extends Module {
 
         if (welcomer.getValue()) {
             String text = welcomerText.getValue().replace("[username]", (welcomerSync.getValue() ? "" : inversion.getValue() ? Formatting.GRAY : Formatting.WHITE) + mc.player.getName().getString() + Formatting.RESET);
-            drawText(event.getContext(), text, mc.getWindow().getScaledWidth() / 2.0f - Sydney.FONT_MANAGER.getWidth(text) / 2.0f, watermark.getValue() ? Sydney.FONT_MANAGER.getHeight() : 0);
+            drawText(event.getContext(), text, mc.getWindow().getScaledWidth() / 2.0f - Sydney.FONT_MANAGER.getWidth(text) / 2.0f, 0);
+            System.out.println("Welcomer y: 0");
         }
     }
 
