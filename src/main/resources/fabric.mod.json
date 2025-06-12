@@ -1,13 +1,14 @@
 {
 	"schemaVersion": 1,
-	"id": "sydney",
+	"id": "better-sydney",
 	"version": "${version}",
-	"name": "Sydney",
-	"description": "Sydney is a Minecraft utility mod aimed at anarchy servers, giving you useful features for combat and utility.",
+	"name": "Better Sydney",
+	"description": "Sydney-Client but better.",
 	"authors": [
-		"Aidan",
-		"p4nda",
-		"TheNano"
+		"Tinkoprof (better sydney author)",
+		"Aidan (original author)",
+		"p4nda (original author)",
+		"TheNano (original author)"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
