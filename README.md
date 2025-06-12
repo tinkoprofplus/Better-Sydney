@@ -23,6 +23,7 @@
 - *Added new capes (not completed...)*
 - *More better combat utility (not completed...)*
 - *Optimized some mixins (not completed...)*
+- *Fixed some HUD bugs*
 
 ## CREDITS
 
