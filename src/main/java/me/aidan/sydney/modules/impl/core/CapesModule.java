@@ -10,12 +10,17 @@ import net.minecraft.util.Identifier;
 @Getter
 @RegisterModule(name = "Capes", description = "Applies the Sydney cape to yourself and to other users.", category = Module.Category.CORE, toggled = true, drawn = false)
 public class CapesModule extends Module {
+    public ModeSetting capeMode = new ModeSetting("Cape Mode", "Select which cape to display", "Sydney", new String[]{"Sydney", "Klux", "Future"});
     private Identifier capeTexture;
 
-    public CapesModule() {
-        public ModeSetting capeMode = new ModeSetting("Cape Mode", "Select which cape to display", "Sydney", new String[]{"Sydney", "Klux", "Future"});
+    @Override
+    public void onEnable() {
         capeMode.onChange(capeMode -> updateCapeTexture());
-        updateCapeTexture();
+    }
+    
+    @Override
+    public void onDisable() {
+        capeMode.onChange(capeMode -> updateCapeTexture());
     }
 
     public void updateCapeTexture() {
